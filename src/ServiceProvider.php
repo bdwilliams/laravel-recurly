@@ -35,7 +35,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 	public function register()
 	{
         Recurly_Client::$subdomain = config('recurly.subdomain', null);
-        Recurly_Client::$apiKey = config('recurly.api_key', null);
-        Recurly_js::$privateKey = config('recurly.private_key', null);
+        Recurly_Client::$apiKey = config('recurly.private_key', null);
+        Recurly_js::$privateKey = config('recurly.api_key', null);
 	}
 }
